@@ -1,0 +1,10 @@
+@use "../var" as *;
+
+.container {
+  width: min(calc(100% - 40px), $container);
+  margin-inline: auto;
+
+    &--sm {
+      width: min(calc(100% - 40px), $container-sm);
+    }
+}

@@ -1,11 +1,17 @@
 @use "../var" as *;
+@use "../mixins" as *;
 
 .video {
   padding-bottom: 5.813rem;
   background-color: $color-grey;
-}
-.video__iframe {
-  width: 100%;
-  height: 600px;
-  border: 0;
+  
+    &__title {
+      @extend %visually-hidden;
+    }
+
+    &__iframe {
+      width: 100%;
+      height: 600px;
+      border: 0;
+    }
 }

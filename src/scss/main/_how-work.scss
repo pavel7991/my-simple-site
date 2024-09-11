@@ -1,6 +1,15 @@
 @use "../var" as *;
+@use "../mixins" as *;
 
 .how-work {
+  @extend %text-loyout;
   padding: 5.75rem 0 3.063rem;
   background-color: $color-grey;
+
+    &__title {
+      @extend %text-loyout__title;
+    }
+    &__text {
+      @extend %text-loyout__text;
+    }
 }

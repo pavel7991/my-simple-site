@@ -1,27 +1,36 @@
 @use "../var" as *;
+@use "../mixins" as *;
 
 .experience {
   background-color: $color-blue;
   color: $color-white;
   padding: 100px 0;
-}
-.experience-list {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-.experience-item {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: $gap;
-  padding: 0 $gap-xs;
-}
-.experience-item__img {
-  order: -1;
-}
-.experience-item__num {
-  font-weight: 500;
-  font-size: 1.313rem;
-  line-height: 1.538rem;
+
+  &__title {
+    @extend %visually-hidden;
+  }
+
+  &-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: $gap;
+    padding: 0 $gap-xs;
+    
+      &__img {
+        order: -1;
+      }
+
+      &__num {
+        font-weight: 500;
+        font-size: 1.313rem;
+        line-height: 1.538rem;
+      }
+  }
 }

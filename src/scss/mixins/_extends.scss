@@ -1,24 +1,30 @@
 @use "../var" as *;
+@use "../mixins" as *;
 
-.text-loyout {
+%text-loyout {
   text-align: center;
-}
-.text-loyout__title {
-  font-size: 2rem;
-  font-weight: 500;
-  line-height: $line-height-md;
-  margin-bottom: 2.375rem;
-}
-.text-loyout__text {
-  color: $color-medium-grey;
+
+    &__title {
+      @include font(2rem, $line-height-md);
+      font-weight: 500;
+      margin-bottom: 2.375rem;
+    }
+    &__text {
+      color: $color-medium-grey;
+    }
 }
 
-.visually-hidden {
+
+%visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
   margin: -1px;
   border: 0;
+  padding: 0;
+  
   white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
   overflow: hidden;
 }

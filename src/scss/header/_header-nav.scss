@@ -1,16 +1,23 @@
 @use "../var" as *;
 
-.header-nav__list {
-  display: flex;
-  gap: $gap-lg;
+.header-nav {
+  &__list {
+    display: flex;
+    gap: $gap-lg;
+  }
+
+  &__link {
+    padding: $gap-sm 3px $gap-sm 0;
+    letter-spacing: $letter-spacing;
+    color: $color-dark;
+    transition: color, 0.3s ease-out;
+
+      &--active,
+      &:hover {
+        color: $color-blue;
+      }
+  }
 }
-.header-nav__link {
-  padding: $gap-sm 3px $gap-sm 0;
-  letter-spacing: $letter-spacing;
-  color: $color-dark;
-  transition: color, 0.3s ease-out;
-}
-.header-nav__link--active,
-.header-nav__link:hover {
-  color: $color-blue;
-}
+
+
+

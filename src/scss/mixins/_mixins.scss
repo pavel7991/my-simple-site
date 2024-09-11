@@ -1,1 +1,7 @@
 @use "../var" as *;
+
+@mixin font($size: $font-size, $lh : $line-height, $color: $color-dark) {
+  font-size: $size;
+  line-height: $lh;
+  color: $color;
+}
