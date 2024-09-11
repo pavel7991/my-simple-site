@@ -1,0 +1,11 @@
+@use "../var" as *;
+
+.video {
+  padding-bottom: 5.813rem;
+  background-color: $color-grey;
+}
+.video__iframe {
+  width: 100%;
+  height: 600px;
+  border: 0;
+}

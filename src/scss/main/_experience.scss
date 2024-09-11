@@ -1,0 +1,27 @@
+@use "../var" as *;
+
+.experience {
+  background-color: $color-blue;
+  color: $color-white;
+  padding: 100px 0;
+}
+.experience-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.experience-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: $gap;
+  padding: 0 $gap-xs;
+}
+.experience-item__img {
+  order: -1;
+}
+.experience-item__num {
+  font-weight: 500;
+  font-size: 1.313rem;
+  line-height: 1.538rem;
+}

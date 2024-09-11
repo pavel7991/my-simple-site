@@ -1,0 +1,16 @@
+@use "../var" as *;
+
+.footer {
+  padding: 3.063rem 0 2.688rem;
+  background-color: $color-blue;
+  color: $color-white;
+}
+.footer__name {
+  font-size: 1.313rem;
+  font-weight: 500;
+  margin-bottom: 0.688rem;
+}
+.footer__copyright {
+  font-size: 0.813rem;
+  line-height: 1.333rem;
+}
