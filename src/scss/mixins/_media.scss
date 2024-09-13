@@ -1,0 +1,25 @@
+@use "../var" as *;
+
+@mixin media-lg {
+  @media (max-width: $breakpoints-lg){
+      @content;
+  }
+}
+
+@mixin media-md {
+  @media (max-width: $breakpoints-md){
+      @content;
+  }
+}
+
+@mixin media-sm {
+  @media (max-width: $breakpoints-sm){
+      @content;
+  }
+}
+
+@mixin media-xs {
+  @media (max-width: $breakpoints-xs){
+      @content;
+  }
+}
