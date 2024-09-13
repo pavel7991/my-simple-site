@@ -224,3 +224,8 @@ a {
 
   border: 0;
 }
+@media (max-width: 768px) {
+  .header-content {
+    width: 100%;
+  }
+}
