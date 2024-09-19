@@ -4,7 +4,13 @@
 .experience {
   background-color: $color-blue;
   color: $color-white;
-  padding: 100px 0;
+  
+    @include media-lg-min {
+      padding: 100px 0;
+    }
+    @include media-lg {
+      padding: 50px 0;
+    }
 
   &__title {
     @extend %visually-hidden;
@@ -14,7 +20,12 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+
+      @include media-lg {
+        row-gap: $gap-lg;
+      }
   }
+ 
 
   &-item {
     display: flex;
@@ -22,7 +33,13 @@
     align-items: center;
     gap: $gap;
     padding: 0 $gap-xs;
-    
+
+      @include media-lg-sm {
+        flex-basis: 30%;
+      }
+      @include media-sm {
+        flex-basis: 45%;
+      }
       &__img {
         order: -1;
       }

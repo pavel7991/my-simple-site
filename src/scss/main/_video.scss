@@ -2,16 +2,31 @@
 @use "../mixins" as *;
 
 .video {
-  padding-bottom: 5.813rem;
   background-color: $color-grey;
+
+    @include media-sm-min {
+      padding-bottom: 5.813rem;
+    }
+    @include media-sm {
+      padding-bottom: 3.5rem;
+    }
   
     &__title {
       @extend %visually-hidden;
     }
+}
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 54%;
 
     &__iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
       width: 100%;
-      height: 600px;
+      height: 100%;
       border: 0;
     }
 }

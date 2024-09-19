@@ -1,0 +1,63 @@
+@use "../var" as *;
+@use "../mixins" as *;
+
+.header-burger {
+  width: 30px;
+  height: 22px;
+  position: relative;
+  display: flex;
+  margin-left: auto;
+  transform: rotate(0deg);
+  transition: .5s ease-in-out;
+  cursor: pointer;
+  z-index: 99;
+
+  @include media-md-min {  
+    display: none;
+  }
+
+
+  &-row {
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background: $color-blue;background: $color-blue;
+    border-radius: 4px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+
+    &:nth-child(1) {
+      top: 0px;
+    }
+    &:nth-child(2) {
+      top: 9px;
+    }
+    &:nth-child(3) {
+      top: 18px;
+    }
+  }
+  
+  &.open .header-burger-row {
+    background: #fff;
+
+    &:nth-child(1) {
+      top: 9px;
+      transform: rotate(135deg);
+    }
+    &:nth-child(2) {
+      opacity: 0;
+      left: -30px;
+    }
+    &:nth-child(3) {
+      top: 9px;
+      transform: rotate(-135deg);
+    }
+  }
+}
+
+
+
+

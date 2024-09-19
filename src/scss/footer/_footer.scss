@@ -1,9 +1,16 @@
 @use "../var" as *;
+@use "../mixins" as *;
 
 .footer {
-  padding: 3.063rem 0 2.688rem;
   background-color: $color-blue;
   color: $color-white;
+
+    @include media-sm-min {
+      padding: 3.063rem 0 2.688rem;
+    }
+    @include media-sm {
+      padding: 1.5rem 0 1.5rem;
+    }
 
     &__name {
       font-size: 1.313rem;

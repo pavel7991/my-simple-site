@@ -3,8 +3,14 @@
 
 .how-work {
   @extend %text-loyout;
-  padding: 5.75rem 0 3.063rem;
   background-color: $color-grey;
+
+    @include media-sm-min {
+      padding: 5.75rem 0 3.063rem;
+    }
+    @include media-sm {
+      padding: 3.5rem 0 3.5rem;
+    }
 
     &__title {
       @extend %text-loyout__title;

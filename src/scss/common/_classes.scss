@@ -1,10 +1,10 @@
 @use "../var" as *;
+@use "../mixins" as *;
 
 .container {
-  width: min(calc(100% - 40px), $container);
-  margin-inline: auto;
+  @include container;
 
-    &--sm {
-      width: min(calc(100% - 40px), $container-sm);
-    }
+  &-sm {
+    @include container($container-sm);
+  }
 }

@@ -16,25 +16,32 @@
 <body>
   <header class="header">
     <div class="container">
-      <nav class="header-nav">
-        <ul class="header-nav__list">
-          <li class="header-nav__item">
-            <a href="#" class="header-nav__link header-nav__link--active">ГЛАВНАЯ</a>
-          </li>
-          <li class="header-nav__item">
-            <a href="#" class="header-nav__link">ОБ АВТОРЕ</a>
-          </li>
-          <li class="header-nav__item">
-            <a href="#" class="header-nav__link">РАБОТЫ</a>
-          </li>
-          <li class="header-nav__item">
-            <a href="#" class="header-nav__link">ПРОЦЕСС</a>
-          </li>
-          <li class="header-nav__item">
-            <a href="#" class="header-nav__link">КОНТАКТЫ</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="header-burger">
+        <span class="header-burger-row"></span>
+        <span class="header-burger-row"></span>
+        <span class="header-burger-row"></span>
+      </div>
+      <div class="mobile-menu-wrapper">
+        <nav class="header-nav">
+          <ul class="header-nav__list">
+            <li class="header-nav__item">
+              <a href="#" class="header-nav__link header-nav__link--active">ГЛАВНАЯ</a>
+            </li>
+            <li class="header-nav__item">
+              <a href="#" class="header-nav__link">ОБ АВТОРЕ</a>
+            </li>
+            <li class="header-nav__item">
+              <a href="#" class="header-nav__link">РАБОТЫ</a>
+            </li>
+            <li class="header-nav__item">
+              <a href="#" class="header-nav__link">ПРОЦЕСС</a>
+            </li>
+            <li class="header-nav__item">
+              <a href="#" class="header-nav__link">КОНТАКТЫ</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
       <div class="header-content">
         <h1 class="header-content__title">Дизайн и верстка</h1>
         <p class="header-content__text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и<br>
@@ -46,7 +53,7 @@
 
   <main>
     <section class="about">
-      <div class="container container--sm">
+      <div class="container-sm">
         <h2 class="about__title">Обо мне</h2>
         <p class="about__text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и
           <br>вэб-дизайне.
@@ -120,7 +127,7 @@
     </section>
 
     <section class="how-work">
-      <div class="container container--sm">
+      <div class="container-sm">
         <h2 class="how-work__title">Как я работаю</h2>
         <p class="how-work__text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и
           <br>вэб-дизайне.
@@ -134,11 +141,13 @@
       <div class="container">
         <h2 class="video__title">Video title</h2>
 
-        <iframe class="video__iframe" width="560" height="315"
-          src="https://www.youtube.com/embed/0YSJ31wMmXc?si=MXnSaRv-s5nClkIA&amp;controls=0"
-          title="YouTube video player"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div class="video-wrapper">
+          <iframe class="video-wrapper__iframe"
+            src="https://www.youtube.com/embed/0YSJ31wMmXc?si=MXnSaRv-s5nClkIA&amp;controls=0"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
       </div>
     </section>
   </main>
@@ -150,6 +159,7 @@
     </div>
   </footer>
 
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
 

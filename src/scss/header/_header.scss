@@ -1,8 +1,18 @@
 @use "../var" as *;
+@use "../mixins" as *;
 
 .header {
   background-color: $color-grey;
-  padding: 4.688rem 0 8.75rem;
+
+  @include media-lg-min {
+    padding: 4.688rem 0 8.75rem;
+  }
+  @include media-lg-md {
+    padding: 0 0 2rem;
+  }
+  @include media-md {
+    padding: 1rem 0 2rem;
+  }
 }
 
 

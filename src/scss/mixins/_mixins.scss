@@ -5,3 +5,9 @@
   line-height: $lh;
   color: $color;
 }
+
+
+@mixin container($width: $container-primary) {
+  width: min(100% - $gap-lg, $width);
+  margin-inline: auto;
+}
